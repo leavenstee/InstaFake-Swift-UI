@@ -14,5 +14,5 @@ struct InstaPhoto: Identifiable {
     let username: String
     let comments: [String]
     let likes: Int
-    let image: Image
+    let image: String
 }

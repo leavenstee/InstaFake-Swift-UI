@@ -11,13 +11,14 @@ import AVKit
 import CoreLocation
 
 struct ContentView : View {
-    var instaPhotos: [InstaPhoto] = []
+    var instaPhotos: [InstaPhoto] = [InstaPhoto(id: 0, username: "leavenstee", comments: ["Nice", "Cool","Lame"], likes: 100, image: "burrito"),InstaPhoto(id: 0, username: "leavenstee", comments: ["Nice", "Cool","Lame","Nice", "Cool","Lame"], likes: 200, image: "pizza"),
+    InstaPhoto(id: 0, username: "leavenstee", comments: ["Nice", "Cool","Lame","Nice", "Cool","Lame","Nice", "Cool","Lame","Nice", "Cool","Lame"], likes: 4440, image: "wwdc"),InstaPhoto(id: 0, username: "leavenstee", comments: ["Nice", "Cool"], likes: 20, image: "badge")]
     
     var body: some View {
         NavigationView {
         ZStack(alignment: .bottom) {
-            List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) {_ in
-                PizzaCell()
+            List(instaPhotos) { photo in
+                PizzaCell(photo: photo)
             }
             Button(action: takePhoto, label: {
                 Image("photo-camera")
@@ -42,19 +43,20 @@ struct ContentView_Previews : PreviewProvider {
 #endif
 
 struct PizzaCell : View {
+    let photo: InstaPhoto
     var body: some View {
         return VStack(alignment: .leading) {
-        Image("burrito")
+        Image(photo.image)
             .resizable()
             .scaledToFit()
             .cornerRadius(10)
             PictureButtons()
-            Text("Likes 200")
+            Text("\(photo.likes) Likes")
                 .multilineTextAlignment(.leading)
-                Text("Pizza Pizza")
+                Text(photo.username)
                     .multilineTextAlignment(.leading)
             Button(action: {}, label: {
-                Text("View All 5 Comments")
+                Text("View All \(photo.comments.count) Comments")
                     .fontWeight(.light)
             })
         }
