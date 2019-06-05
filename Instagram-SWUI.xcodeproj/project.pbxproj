@@ -14,6 +14,9 @@
 		C313C0C122A6FBAE00FF2AFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C313C0C022A6FBAE00FF2AFB /* Assets.xcassets */; };
 		C313C0C422A6FBAE00FF2AFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C313C0C322A6FBAE00FF2AFB /* Preview Assets.xcassets */; };
 		C313C0C722A6FBAE00FF2AFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C313C0C522A6FBAE00FF2AFB /* LaunchScreen.storyboard */; };
+		C313C0F422A727EE00FF2AFB /* InstaPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C313C0F322A727EE00FF2AFB /* InstaPhoto.swift */; };
+		C313C0FE22A775B400FF2AFB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C313C0FD22A775B400FF2AFB /* MapView.swift */; };
+		C313C10222A778D100FF2AFB /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C313C10122A778D100FF2AFB /* PhotoLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		C313C0C322A6FBAE00FF2AFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C313C0C622A6FBAE00FF2AFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C313C0C822A6FBAE00FF2AFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C313C0F322A727EE00FF2AFB /* InstaPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPhoto.swift; sourceTree = "<group>"; };
+		C313C0FD22A775B400FF2AFB /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C313C10122A778D100FF2AFB /* PhotoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 				C313C0B722A6FBAC00FF2AFB /* AppDelegate.swift */,
 				C313C0B922A6FBAC00FF2AFB /* SceneDelegate.swift */,
 				C313C0BE22A6FBAC00FF2AFB /* ContentView.swift */,
+				C313C0F322A727EE00FF2AFB /* InstaPhoto.swift */,
+				C313C10122A778D100FF2AFB /* PhotoLibrary.swift */,
+				C313C0FD22A775B400FF2AFB /* MapView.swift */,
 				C313C0C022A6FBAE00FF2AFB /* Assets.xcassets */,
 				C313C0C522A6FBAE00FF2AFB /* LaunchScreen.storyboard */,
 				C313C0C822A6FBAE00FF2AFB /* Info.plist */,
@@ -150,7 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C313C0B822A6FBAC00FF2AFB /* AppDelegate.swift in Sources */,
+				C313C0FE22A775B400FF2AFB /* MapView.swift in Sources */,
 				C313C0BD22A6FBAC00FF2AFB /* Instagram_SWUI.xcdatamodeld in Sources */,
+				C313C0F422A727EE00FF2AFB /* InstaPhoto.swift in Sources */,
+				C313C10222A778D100FF2AFB /* PhotoLibrary.swift in Sources */,
 				C313C0BF22A6FBAC00FF2AFB /* ContentView.swift in Sources */,
 				C313C0BA22A6FBAC00FF2AFB /* SceneDelegate.swift in Sources */,
 			);
