@@ -17,6 +17,7 @@
 		C313C0F422A727EE00FF2AFB /* InstaPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C313C0F322A727EE00FF2AFB /* InstaPhoto.swift */; };
 		C313C0FE22A775B400FF2AFB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C313C0FD22A775B400FF2AFB /* MapView.swift */; };
 		C313C10222A778D100FF2AFB /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C313C10122A778D100FF2AFB /* PhotoLibrary.swift */; };
+		C313C10822A8301D00FF2AFB /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C313C10722A8301D00FF2AFB /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C313C0F322A727EE00FF2AFB /* InstaPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPhoto.swift; sourceTree = "<group>"; };
 		C313C0FD22A775B400FF2AFB /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		C313C10122A778D100FF2AFB /* PhotoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
+		C313C10722A8301D00FF2AFB /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				C313C0B722A6FBAC00FF2AFB /* AppDelegate.swift */,
 				C313C0B922A6FBAC00FF2AFB /* SceneDelegate.swift */,
 				C313C0BE22A6FBAC00FF2AFB /* ContentView.swift */,
+				C313C10722A8301D00FF2AFB /* CameraView.swift */,
 				C313C0F322A727EE00FF2AFB /* InstaPhoto.swift */,
 				C313C10122A778D100FF2AFB /* PhotoLibrary.swift */,
 				C313C0FD22A775B400FF2AFB /* MapView.swift */,
@@ -165,6 +168,7 @@
 				C313C10222A778D100FF2AFB /* PhotoLibrary.swift in Sources */,
 				C313C0BF22A6FBAC00FF2AFB /* ContentView.swift in Sources */,
 				C313C0BA22A6FBAC00FF2AFB /* SceneDelegate.swift in Sources */,
+				C313C10822A8301D00FF2AFB /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

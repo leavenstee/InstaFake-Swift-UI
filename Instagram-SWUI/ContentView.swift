@@ -11,25 +11,20 @@ import AVKit
 import CoreLocation
 
 struct ContentView : View {
-    var instaPhotos: [InstaPhoto] = [InstaPhoto(id: 0, username: "leavenstee", comments: ["Nice", "Cool","Lame"], likes: 100, image: "burrito"),InstaPhoto(id: 0, username: "leavenstee", comments: ["Nice", "Cool","Lame","Nice", "Cool","Lame"], likes: 200, image: "pizza"),
-    InstaPhoto(id: 0, username: "leavenstee", comments: ["Nice", "Cool","Lame","Nice", "Cool","Lame","Nice", "Cool","Lame","Nice", "Cool","Lame"], likes: 4440, image: "wwdc"),InstaPhoto(id: 0, username: "leavenstee", comments: ["Nice", "Cool"], likes: 20, image: "badge")]
+    var instaPhotos: [InstaPhoto]
     
     var body: some View {
-        NavigationView {
-        ZStack(alignment: .bottom) {
-            List(instaPhotos) { photo in
+        List {
+            ForEach(instaPhotos) { photo in
                 PizzaCell(photo: photo)
             }
-            Button(action: takePhoto, label: {
-                Image("photo-camera")
-                }).background(Color.gray).cornerRadius(30)
         }
-        }.navigationBarTitle(Text("WWDC-Gram").bold())
+       
     }
     
     func takePhoto() {
        // Open Camera
-      
+        
     }
   
 }
@@ -37,63 +32,75 @@ struct ContentView : View {
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(instaPhotos: [InstaPhoto(id: 0, username: "leavenstee", comments: ["Nice", "Cool","Lame"], likes: 100, image: "wwdc"),InstaPhoto(id: 0, username: "leavenstee", comments: ["Nice", "Cool","Lame","Nice", "Cool","Lame"], likes: 200, image: "pizza"),
+                                  InstaPhoto(id: 0, username: "leavenstee", comments: ["Nice", "Cool","Lame","Nice", "Cool","Lame","Nice", "Cool","Lame","Nice", "Cool","Lame"], likes: 4440, image: "wwdc"),InstaPhoto(id: 0, username: "leavenstee", comments: ["Nice", "Cool"], likes: 20, image: "badge")])
     }
 }
 #endif
 
 struct PizzaCell : View {
+    @State var expanded = false
+    @State var liked = false
+    
     let photo: InstaPhoto
+    
     var body: some View {
         return VStack(alignment: .leading) {
-        Image(photo.image)
+            Image(photo.image)
             .resizable()
             .scaledToFit()
             .cornerRadius(10)
-            PictureButtons()
+            // Control Buttons
+            HStack {
+                Button(action: withAnimation { likeButtonPressed }, label: {
+                    Text( self.liked ? "❤️" :"💔")
+                })
+                Button(action: commentButtonPressed, label: {
+                    Text("🗣")
+                })
+                Button(action: likeButtonPressed, label: {
+                    Text("📪")
+                })
+                Spacer()
+                Button(action: likeButtonPressed, label: {
+                    Text("📕")
+                })
+            }
             Text("\(photo.likes) Likes")
                 .multilineTextAlignment(.leading)
                 Text(photo.username)
                     .multilineTextAlignment(.leading)
-            Button(action: {}, label: {
+            Button(action: moreCommentsPressed, label: {
                 Text("View All \(photo.comments.count) Comments")
                     .fontWeight(.light)
             })
+            if expanded {
+                VStack {
+                    Text("Test Comment")
+                    Text("Test Comment")
+                    Text("Test Comment")
+                    Text("Test Comment")
+                }
+            }
         }
+    }
+    func moreCommentsPressed() {
+        expanded.toggle()
+    }
+    func likeButtonPressed() {
+        liked.toggle()
+    }
+
+    func commentButtonPressed() {
+       
+    }
+
+    func shareButtonPressed() {
+    
+    }
+
+    func bookMarkButtonPressed() {
+    
     }
 }
 
-struct PictureButtons : View {
-    var body: some View {
-        return HStack {
-            Button(action: likeButtonPressed, label: {
-                Text("❤️")
-                })
-                Button(action: commentButtonPressed, label: {
-                    Text("🗣")
-                    })
-                    Button(action: likeButtonPressed, label: {
-                        Text("📪")
-                        })
-                        Spacer()
-                        Button(action: likeButtonPressed, label: {
-                            Text("📕")
-                            })
-                        }
-                    }
-    func likeButtonPressed() {
-        
-    }
-    
-    func commentButtonPressed() {
-        
-    }
-    
-    func shareButtonPressed() {
-        
-    }
-    
-    func bookMarkButtonPressed() {
-        
-    }
-                }
