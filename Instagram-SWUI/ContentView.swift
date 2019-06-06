@@ -14,17 +14,16 @@ struct ContentView : View {
     var instaPhotos: [InstaPhoto]
     
     var body: some View {
-        List {
-            ForEach(instaPhotos) { photo in
+        NavigationView {
+            List(instaPhotos.identified(by: \.id)) { photo in
                 PizzaCell(photo: photo)
             }
-        }
-       
+            .navigationBarTitle(Text("WWDC"))
+        }.navigationBarItems(trailing: Text("Camera"))
     }
     
     func takePhoto() {
        // Open Camera
-        
     }
   
 }
@@ -46,6 +45,13 @@ struct PizzaCell : View {
     
     var body: some View {
         return VStack(alignment: .leading) {
+            HStack {
+                Image("badge").resizable().scaledToFit().cornerRadius(100)
+                Text(photo.username)
+                Button(action: {}, label: {
+                    Text("...")
+                })
+            }.frame(height: 40)
             Image(photo.image)
             .resizable()
             .scaledToFit()

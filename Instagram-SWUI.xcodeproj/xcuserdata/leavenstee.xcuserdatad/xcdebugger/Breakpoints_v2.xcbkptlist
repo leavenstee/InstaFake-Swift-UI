@@ -12,11 +12,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Instagram-SWUI/ContentView.swift"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "likeButtonPressed()"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "commentButtonPressed()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -28,12 +29,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Instagram-SWUI/ContentView.swift"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "likeButtonPressed()"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "commentButtonPressed()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A194FFCC-CF5D-49B1-A5C0-F58F602A41A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Instagram-SWUI/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "A194FFCC-CF5D-49B1-A5C0-F58F602A41A1 - 15e65f31acced2a7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.Spacer, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI._ModifiedContent&lt;SwiftUI._ModifiedContent&lt;SwiftUI.Image, SwiftUI._AspectRatioLayout&gt;, SwiftUI._ClipEffect&lt;SwiftUI.RoundedRectangle&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.Spacer, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt;&gt;, SwiftUI._ModifiedContent&lt;SwiftUI.Text, SwiftUI._EnvironmentKeyWritingModifier&lt;SwiftUI.HAlignment&gt;&gt;, SwiftUI._ModifiedContent&lt;SwiftUI.Text, SwiftUI._EnvironmentKeyWritingModifier&lt;SwiftUI.HAlignment&gt;&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;, Swift.Optional&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;&gt;)&gt; in Instagram_SWUI.PizzaCell.body.getter : some"
+                  moduleName = "Instagram-SWUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leavenstee/Desktop/Instagram-SWUI/Instagram-SWUI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "1388">
+               </Location>
+               <Location
+                  uuid = "A194FFCC-CF5D-49B1-A5C0-F58F602A41A1 - 2e7f84e2d27dded2"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; SwiftUI.Text in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.Spacer, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI._ModifiedContent&lt;SwiftUI._ModifiedContent&lt;SwiftUI.Image, SwiftUI._AspectRatioLayout&gt;, SwiftUI._ClipEffect&lt;SwiftUI.RoundedRectangle&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.Spacer, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt;&gt;, SwiftUI._ModifiedContent&lt;SwiftUI.Text, SwiftUI._EnvironmentKeyWritingModifier&lt;SwiftUI.HAlignment&gt;&gt;, SwiftUI._ModifiedContent&lt;SwiftUI.Text, SwiftUI._EnvironmentKeyWritingModifier&lt;SwiftUI.HAlignment&gt;&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;, Swift.Optional&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;&gt;)&gt; in Instagram_SWUI.PizzaCell.body.getter : some"
+                  moduleName = "Instagram-SWUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leavenstee/Desktop/Instagram-SWUI/Instagram-SWUI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "49">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
