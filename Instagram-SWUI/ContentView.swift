@@ -15,15 +15,19 @@ struct ContentView : View {
     
     var body: some View {
         NavigationView {
-            List(instaPhotos.identified(by: \.id)) { photo in
-                PizzaCell(photo: photo)
-            }
-            .navigationBarTitle(Text("WWDC"))
-        }.navigationBarItems(trailing: Text("Camera"))
+            List {
+                ForEach(instaPhotos.identified(by: \.id)) {
+                    ImageCell(photo: $0)
+                }
+                }.navigationBarTitle(Text("WWDC")).navigationBarItems(trailing: Text("Camera").tapAction {
+                    self.takePhoto()
+                })
+        }
     }
     
     func takePhoto() {
        // Open Camera
+    
     }
   
 }
@@ -37,11 +41,11 @@ struct ContentView_Previews : PreviewProvider {
 }
 #endif
 
-struct PizzaCell : View {
+struct ImageCell : View {
     @State var expanded = false
     @State var liked = false
     
-    let photo: InstaPhoto
+    var photo: InstaPhoto
     
     var body: some View {
         return VStack(alignment: .leading) {
@@ -52,6 +56,7 @@ struct PizzaCell : View {
                     Text("...")
                 })
             }.frame(height: 40)
+            
             Image(photo.image)
             .resizable()
             .scaledToFit()
@@ -90,9 +95,11 @@ struct PizzaCell : View {
             }
         }
     }
+    
     func moreCommentsPressed() {
         expanded.toggle()
     }
+    
     func likeButtonPressed() {
         liked.toggle()
     }
@@ -109,4 +116,3 @@ struct PizzaCell : View {
     
     }
 }
-
