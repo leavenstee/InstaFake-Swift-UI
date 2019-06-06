@@ -12,16 +12,14 @@ import CoreLocation
 
 struct ContentView : View {
     var instaPhotos: [InstaPhoto]
-    
+  
     var body: some View {
         NavigationView {
             List {
                 ForEach(instaPhotos.identified(by: \.id)) {
                     ImageCell(photo: $0)
                 }
-                }.navigationBarTitle(Text("WWDC")).navigationBarItems(trailing: Text("Camera").tapAction {
-                    self.takePhoto()
-                })
+                }.navigationBarTitle(Text("WWDC")).navigationBarItems(trailing: PresentationButton(Text("Camera"), destination: CameraView()))
         }
     }
     

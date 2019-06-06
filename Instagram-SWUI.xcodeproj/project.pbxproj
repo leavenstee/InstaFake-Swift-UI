@@ -15,9 +15,9 @@
 		C313C0C422A6FBAE00FF2AFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C313C0C322A6FBAE00FF2AFB /* Preview Assets.xcassets */; };
 		C313C0C722A6FBAE00FF2AFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C313C0C522A6FBAE00FF2AFB /* LaunchScreen.storyboard */; };
 		C313C0F422A727EE00FF2AFB /* InstaPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C313C0F322A727EE00FF2AFB /* InstaPhoto.swift */; };
-		C313C0FE22A775B400FF2AFB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C313C0FD22A775B400FF2AFB /* MapView.swift */; };
 		C313C10222A778D100FF2AFB /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C313C10122A778D100FF2AFB /* PhotoLibrary.swift */; };
 		C313C10822A8301D00FF2AFB /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C313C10722A8301D00FF2AFB /* CameraView.swift */; };
+		C34D712822A9B14700E60D50 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34D712722A9B14700E60D50 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,10 @@
 		C313C0C622A6FBAE00FF2AFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C313C0C822A6FBAE00FF2AFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C313C0F322A727EE00FF2AFB /* InstaPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPhoto.swift; sourceTree = "<group>"; };
-		C313C0FD22A775B400FF2AFB /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		C313C10122A778D100FF2AFB /* PhotoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
 		C313C10722A8301D00FF2AFB /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		C34D712722A9B14700E60D50 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		C34D712922A9C1CF00E60D50 /* Instagram-SWUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Instagram-SWUI.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +67,14 @@
 		C313C0B622A6FBAC00FF2AFB /* Instagram-SWUI */ = {
 			isa = PBXGroup;
 			children = (
+				C34D712922A9C1CF00E60D50 /* Instagram-SWUI.entitlements */,
 				C313C0B722A6FBAC00FF2AFB /* AppDelegate.swift */,
 				C313C0B922A6FBAC00FF2AFB /* SceneDelegate.swift */,
+				C34D712722A9B14700E60D50 /* CameraViewController.swift */,
 				C313C0BE22A6FBAC00FF2AFB /* ContentView.swift */,
 				C313C10722A8301D00FF2AFB /* CameraView.swift */,
 				C313C0F322A727EE00FF2AFB /* InstaPhoto.swift */,
 				C313C10122A778D100FF2AFB /* PhotoLibrary.swift */,
-				C313C0FD22A775B400FF2AFB /* MapView.swift */,
 				C313C0C022A6FBAE00FF2AFB /* Assets.xcassets */,
 				C313C0C522A6FBAE00FF2AFB /* LaunchScreen.storyboard */,
 				C313C0C822A6FBAE00FF2AFB /* Info.plist */,
@@ -162,11 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C313C0B822A6FBAC00FF2AFB /* AppDelegate.swift in Sources */,
-				C313C0FE22A775B400FF2AFB /* MapView.swift in Sources */,
 				C313C0BD22A6FBAC00FF2AFB /* Instagram_SWUI.xcdatamodeld in Sources */,
 				C313C0F422A727EE00FF2AFB /* InstaPhoto.swift in Sources */,
 				C313C10222A778D100FF2AFB /* PhotoLibrary.swift in Sources */,
 				C313C0BF22A6FBAC00FF2AFB /* ContentView.swift in Sources */,
+				C34D712822A9B14700E60D50 /* CameraViewController.swift in Sources */,
 				C313C0BA22A6FBAC00FF2AFB /* SceneDelegate.swift in Sources */,
 				C313C10822A8301D00FF2AFB /* CameraView.swift in Sources */,
 			);
@@ -304,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Instagram-SWUI/Instagram-SWUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "Instagram-SWUI/Preview\\ Content";
 				DEVELOPMENT_TEAM = D846Q7V7YL;
@@ -315,6 +318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "leavenstee.Instagram-SWUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_UIKITFORMAC = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -324,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Instagram-SWUI/Instagram-SWUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "Instagram-SWUI/Preview\\ Content";
 				DEVELOPMENT_TEAM = D846Q7V7YL;
@@ -335,6 +340,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "leavenstee.Instagram-SWUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_UIKITFORMAC = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
